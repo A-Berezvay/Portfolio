@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert Berezvay - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!--Link to CSS file for styling-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="/Images/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/484a70a94f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER NAVIGATION -->
+    <header>
+        <h1>Albert Berezvay</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- INTRODUCTION SECTION -->
+    <main>
+        <section class="intro">
+            <div class="overlay">
+                <h2>Hi, I'm Albert</h2>
+                <p>An aspiring Web Developer</p>
+            </div>
+        </section>
+    <!-- ABOUT ME SECTION -->
+        <h2>A little bit about me</h2>
+        <section class="about-me">
+            <img class="self-portrait" src="/Images/Portrait.jpeg">
+            <p>
+                Hi! My name is Albert and I'm an aspiring Web Developer with a passion for Front-End development. I learned programming in school altough I beleive coding is more of a self taught skill. I think it's more about the results than the certificate, thus this website. Whatever you see is made by me, however trivial it is, I'm very proud of what I've achived and hope to land an entry-level job somtimes in the future. :) 
+            </p>
+        </section>
+        <section class="self-proclamations">
+            <div class="header">
+                <h3>Self Proclamation</h3>
+            </div>
+            <div class="column-container">
+                <div class="column" id="web-dev">
+                    <i class="fa-solid fa-keyboard fa-3x"></i>
+                    <p>Web Developer</p>
+                </div>
+                <div class="column" id="ux">
+                    <i class="fa-solid fa-pen fa-3x"></i>
+                    <p>UX/UI Enthusiast</p>
+                </div>
+                <div class="column" id="chef">
+                    <i class="fa-solid fa-utensils fa-3x"></i>
+                    <p>Chef</p>
+                </div>
+            </div>
+        </section>
+    <!-- SKILL SECTION -->
+        <h2>My Skills</h2>
+        <section id="skills">
+            <div class="skill">
+                <ul>
+                    <li>
+                        <h3>Project Management</h3>
+                        <span class="bar"><span class="project-management"></span></span>
+                    </li>
+                    <li>
+                        <h3>Web Development</h3>
+                        <span class="bar"><span class="web-development"></span></span>
+                    </li>
+                    <li>
+                        <h3>Consultation</h3>
+                        <span class="bar"><span class="consultation"></span></span>
+                    </li>
+                </ul>
+            </div>
+            <article>
+                <p>Hello World! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+        </section>
+    <!-- 3D DESIGN (MIGHT NOT BE RELEVANT) -->
+        <h2>3D Design</h2>
+        <section class="cube-design">
+            <div class="cube">
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+                <div class="face right">Right</div>
+                <div class="face left">Left</div>
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+              </div>
+        </section>
+    <!-- A PORTFOLIO THAT SHOWCASES MY PROJECTS -->
+        <h2>Portfolio</h2>
+        <section id="portfolio">
+            <div class="project">
+                <img src="./Images/Product Image2 Large.png" alt="Project 1">
+                <p>Project Description 1</p>
+            </div>
+        </section>
+    <!-- CONTACT FORM -->
+        <h2>Get in touch</h2>
+        <section id="contact">
+            <p>Interested in working together or have any questions? Feel free to reach out to me! Let's discuss how I can help you with your web development needs and create an impactful online presence for you or your business.</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Joe Doe" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="joedoe@email.com" required>
+                <br>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Create a stunning website" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="8" cols="30" placeholder="Message" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p>Email: berezvay.albert@gmail.com</p>
+        <p>Phone: (+45) 5281-0665</p>
+        <p>&copy; 2023 Albert Berezvay. All rights reserved.</p>
+    </footer>
+</body>
+</html>
