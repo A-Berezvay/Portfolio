@@ -420,8 +420,9 @@ section#skills article{
 
 #contact {
     text-align: center; /* Center-align the content */
-    max-width: 800px; /* Set a maximum width for better readability on larger screens */
+    max-width: 100%; /* Set a maximum width for better readability on larger screens */
     margin: 0 auto; /* Center the section horizontally */
+    padding: 0;
   }
 
   #contact p {
@@ -431,6 +432,12 @@ section#skills article{
   #contact form {
     display: inline-block; /* Display the form as an inline-block element */
     text-align: left; /* Align the form elements to the left within the inline-block */
+    background-color: #fff;
+    width: 100%;
+  }
+
+  #contact label {
+      color: black;
   }
 
   #contact label,
@@ -445,8 +452,20 @@ section#skills article{
     background-color: #007bff; /* Add a background color to the button */
     color: white; /* Set text color to white */
     padding: 10px 20px; /* Add padding to the button */
-    border: none; /* Remove button border */
     cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #contact input {
+      border: none;
+      border-bottom: 2px grey solid;
+      background: none;
+      outline: none;
+      width: 40%;
+  }
+
+  #contact textarea {
+      width: 40%;
   }
 
 /* Footer */
