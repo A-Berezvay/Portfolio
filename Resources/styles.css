@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: rgb(11, 14, 50);
-    color: #fff;
+    background-color: whitesmoke;
+    color: black;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -40,9 +40,9 @@ section {
 
 header {
     top: 0;
-    background-color: rgb(8, 0, 46);
+    background-color: whitesmoke;
     text-align: center;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,10 +57,11 @@ header h1 {
     margin: 0;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    color: black;
 }
 
 header h1:hover {
-    color: aqua;
+    color: darkgray;
 }
 
 .nav-links {
@@ -75,11 +76,11 @@ header h1:hover {
 .nav-links li a {
     transition: all 0.3s ease 0s;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .nav-links li a:hover {
-    color: aqua;
+    color: darkgrey;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -120,6 +121,11 @@ header h1:hover {
     flex-direction: column;
     font-size: 3rem;
     text-align: center;
+}
+
+.overlay h2,
+.overlay p {
+    color: whitesmoke;
 }
 
 /* Responsive design for mobiles */
@@ -198,7 +204,7 @@ header h1:hover {
 
 .self-proclamations {
     text-align: center;
-    border: 2px white solid;
+    border: 2px black solid;
     display: flex;
     flex-direction: column;
     height: 300px;
@@ -299,6 +305,10 @@ header h1:hover {
     margin: 20px;
     padding: 10px;
     list-style: none;
+}
+
+.skill h3 {
+    color: black;
 }
 
 .bar {
@@ -409,7 +419,7 @@ header h1:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: 2px white solid;
+    border: 2px black solid;
     width: 300px;
 }
 
@@ -444,6 +454,7 @@ header h1:hover {
     width: 50%;
     padding: 20px 0;
     margin: 20px 0;
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
 
   #contact label {
@@ -482,10 +493,10 @@ header h1:hover {
 
 footer {
     margin-top: 100px;
-    color: #fff;
+    color: black;
     text-align: center;
     padding: 1rem 0;
-    border-top: 2px solid white;
+    border-top: 2px solid black;
 }
 
 footer p {
