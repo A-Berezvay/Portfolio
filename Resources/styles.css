@@ -217,6 +217,11 @@ header h1:hover {
     flex-direction: row;
 }
 
+.column img {
+    height: 50px;
+    width: auto;
+}
+
 .column p {
     margin-top: 30px;
 }
@@ -243,6 +248,24 @@ header h1:hover {
 
     .about-me p {
         font-size: 1rem;
+        padding: 30px 10px;
+    }
+
+    .self-proclamations {
+        margin: 0 100px;
+        height: 200px;
+    }
+
+    .self-proclamations p {
+        font-size: 1rem;
+    }
+
+    .column-container {
+        margin-top: 30px;
+    }
+
+    .column img {
+        height: 30px;
     }
 }
 
@@ -258,6 +281,11 @@ header h1:hover {
 }
 
 @media only screen and (max-width: 480px) {
+    
+    .about-me {
+        padding: 25px 50px;
+    }
+    
     .self-portrait {
         height: 100px;
         width: 100px;
@@ -269,18 +297,42 @@ header h1:hover {
     }
 
     .self-proclamations {
-        height: 600px;
+        height: 200px;
+        margin: 0;
     }
 
-    .column-container {
-        flex-direction: column;
+    .column-container img {
+        height: 30px;
     }
 
-    .column {
-        margin-top: 30px;
+    .column p {
+        margin: 0;
+        font-size: 0.8rem;
     }
 }
 
+/* CV SECTION */
+
+.CV {
+    background-image: url(/Resources/Images/resume-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CV h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
 
 /* SKILLS */
 
@@ -292,9 +344,21 @@ header h1:hover {
     padding: 50px 30px;
 }
 
+#skills img {
+    height: 50px;
+    width: auto;
+    margin: 0 5px;
+}
+
+.skill-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .skill {
     width: 500px;
-    margin: 60px auto;
+
     color: #fff;
     padding: 20px;
     border-radius: 5px;
