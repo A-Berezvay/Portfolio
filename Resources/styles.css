@@ -87,11 +87,18 @@ header h1:hover {
     header {
         font-size: 0.75rem;
     }
-    
-   
+
+    header nav {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 480px) {
+
+    header {
+        font-size: 0.60rem;
+    }
+
     header nav {
         display: none;
     }
@@ -132,26 +139,15 @@ header h1:hover {
 
 @media only screen and (max-width: 480px){
     .intro {
-    background-image: url(/Images/Laptop\ with\ code.jpg);
-    background-size: auto;
     width: 100%;
-    height: 100px;
-    background-attachment: fixed; 
-    background-color: black;
-    padding: 0;
+    height: 50px;
     }
 
     .overlay {
         padding: 60px;
         width: 100%;
         height: 700px;
-        background-color: rgba(0, 0, 0, 0.75);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         font-size: 1.5rem;
-        text-align: center;
     }
 }
 
@@ -248,7 +244,6 @@ header h1:hover {
 
     .about-me p {
         font-size: 1rem;
-        padding: 30px 10px;
     }
 
     .self-proclamations {
@@ -334,6 +329,15 @@ header h1:hover {
     margin: 10px 0;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .CV h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
 /* SKILLS */
 
 #skills article{
@@ -356,9 +360,19 @@ header h1:hover {
     align-items: center;
 }
 
+.technologies {
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .skill {
     width: 500px;
-
     color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -412,16 +426,58 @@ header h1:hover {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+    #skills {
+        padding: 0;
+    }
+    
     .skill {
-        width: 300px;
-        font-size: 0.75rem;
+        width: 350px;
+        font-size: 1rem;
+    }
+
+    .technologies {
+        margin: 30px 0;
+    }
+
+    #skills img {
+        height: 25px;
+        width: auto;
+    }
+
+    .skill-display {
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media only screen and (max-width: 480px) {
+
+    #skills {
+        padding: 0;
+    }
+
+    #skills p {
+        font-size: 0.90rem;
+    }
+
+    .technologies {
+        margin: 30px 0;
+    }
+
     .skill {
-        width: 250px;
-        font-size: 0.5rem;
+        width: 350px;
+        font-size: 1rem;
+    }
+
+    #skills img {
+        height: 25px;
+        width: auto;
+    }
+
+    .skill-display {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -485,6 +541,7 @@ header h1:hover {
     flex-direction: column;
     border: 2px black solid;
     width: 300px;
+    margin: 50px;
 }
 
 .project p {
@@ -493,6 +550,13 @@ header h1:hover {
 
 .project img {
     width: 100%;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .portfolio {
+        padding: 0;
+    }
 }
 
 /* Contact form */
@@ -553,6 +617,32 @@ header h1:hover {
       width: 90%;
   }
 
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    #contact {
+        padding: 0;
+    }
+
+    #contact form {
+        width: 75%;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+
+    #contact {
+        padding: 0;
+    }
+
+    #contact p {
+        font-size: 0.90rem;
+    }
+
+    #contact form {
+        width: 90%;
+    }
+  }
+
 /* Footer */
 
 footer {
@@ -565,7 +655,18 @@ footer {
 
 footer p {
     margin: 0;
+}
 
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    footer p {
+        font-size: 0.9rem;
+    }
 }
 
 
