@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    background-color: whitesmoke;
+    color: black;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    position:relative;
+    top: 100px;
+}
+
+p {
+    font-size: large;
+}
+
+h2 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+h3 {
+    margin: 5px;
+}
+
+section {
+    padding: 50px 100px;
+}
+
+/* Header Styling */
+
+header {
+    top: 0;
+    background-color: whitesmoke;
+    text-align: center;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-size: 16px;
+}
+
+header h1 {
+    margin: 0;
+    cursor: pointer;
+    color: black;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+header h1 a:hover {
+    color: darkgray;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links li a:hover {
+    color: darkgrey;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    header {
+        font-size: 0.75rem;
+    }
+
+    header nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    header {
+        font-size: 0.60rem;
+    }
+
+    header nav {
+        display: none;
+    }
+}
+
+/* CV display */
+
+.cv-display img {
+    position:relative;
+    top: 100px;
+    height: 700px;
+    border: 2px black solid;
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.cv-display {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 100px;
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 2px solid black;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
