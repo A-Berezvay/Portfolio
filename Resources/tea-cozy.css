@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: seashell;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    border-bottom: 1px seashell solid;
+    position: fixed;
+    width: 100%;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+    color: seashell;
+}
+
+header ul li{
+    color: seashell;
+    display: inline;
+    margin: 0 10px;
+    text-decoration: underline;
+}
+
+header ul li a:hover {
+    color: blue;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-background {
+    background-image: url(/Resources/Images/Tea-Cozy/images/img-mission-background.jpg);
+    height: 700px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-display {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    color: seashell;
+    width: 100%;
+}
+
+.tea-of-the-month h2,
+.tea-of-the-month h4 {
+    margin: 10px 0;
+}
+
+.tea-of-the-month {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.tea-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+
+.teas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tea-display img {
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+}
+
+.background1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.locations-background {
+    background-image: url(/Resources/Images/Tea-Cozy/images/img-locations-background.jpg);
+    height: 500px;
+    width: 1200px;
+    background-repeat: no-repeat;
+    background-size:auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.locations-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.locations {
+    background-color: black;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.info {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer p {
+    text-align: left;
+    margin: 20px 10px;
+}
