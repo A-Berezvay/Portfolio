@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Source Code Pro', monospace;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -35,6 +36,27 @@ h3 {
 section {
     padding: 50px 100px;
 }
+
+button {
+    color: white;
+    background:#0037CC;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 1px 1px 2px black;
+    transition: all 0.3s ease-in;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0077CC;
+    box-shadow: 2px 2px 3px black;
+}
+
+.button:active {
+    transform: translateY(2px);
+  }
 
 /* Header Styling */
 
@@ -317,7 +339,7 @@ header h1:hover {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -330,10 +352,6 @@ header h1:hover {
     padding: 25px;
     margin: 0;
 
-}
-
-.CV h2 a:hover {
-    text-decoration: none;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -370,6 +388,8 @@ header h1:hover {
 .technologies {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
 }
 
 .tech-icons {
@@ -549,6 +569,7 @@ header h1:hover {
     border: 2px black solid;
     width: 300px;
     margin: 50px;
+    transition: 0.3s ease;
 }
 
 .project h3 {
@@ -568,6 +589,15 @@ header h1:hover {
 .project img {
     height: 170px;
     width: 100%;
+    transition: 0.3s ease;
+}
+
+.project:hover {
+    border-radius: 20px 20px 0 0;
+}
+
+.project:hover img {
+    border-radius: 20px 20px 0 0;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -615,13 +645,7 @@ header h1:hover {
     margin-bottom: 10px; /* Add space between form elements */
   }
 
-  #contact button {
-    background-color: #007bff; /* Add a background color to the button */
-    color: white; /* Set text color to white */
-    padding: 10px 20px; /* Add padding to the button */
-    cursor: pointer;
-    border-radius: 5px;
-  }
+
 
   #contact input {
       border: none;
@@ -686,5 +710,3 @@ footer p {
         font-size: 0.9rem;
     }
 }
-
-

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albert Berezvay - Portfolio</title>
     <link rel="stylesheet" href="/Resources/styles.css"> <!--Link to CSS file for styling-->
+    <script defer src="/Resources/app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="/Images/favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +18,9 @@
         <h1>Albert Berezvay</h1>
         <nav>
             <ul class="nav-links">
-                <li><a href=".CV">CV</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#scroll-1">CV</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
     </header>
@@ -59,8 +60,9 @@
             </div>
         </section>
         <!-- CV -->
-        <section class="CV">
-                <h2><a href="cv.html">Check out my CV</a></h2>
+        <section class="CV" id="scroll-1">
+                <h2>Check out my CV</h2>
+                <a href="cv.html"><button>Click here</button></a>
         </section>
     <!-- SKILL SECTION -->
         <h2>My Skills</h2>
@@ -115,22 +117,22 @@
         </section>  -->
     <!-- A PORTFOLIO THAT SHOWCASES MY PROJECTS -->
         <h2>Portfolio</h2>
-        <section class="portfolio">
+        <section class="portfolio" id="projects">
             <div class="project">
                 <img src="./Resources/Images/Colmar Academy/course-data.jpg" alt="Project 1">
                 <h3>Colmar Academy</h3>
                 <p>A fictional Academy site. This project was provided by codecademy.</p>
-                <a href="colmar-academy.html">Go to the site</a>
+                <a href="colmar-academy.html"><button>Visit the site</button></a>
+            </div>
+            <div class="project">
+                <img src="./Resources/Images/Tea-Cozy/images/img-mission-background.jpg" alt="Project 1">
+                <h3>Tea Cozy</h3>
+                <p>A ficitional webshop with the main focus on selling tea online.</p>
+                <a href="tea-cozy.html"><button>Visit the site</button></a>
             </div>
             <div class="project">
                 <img src="./Resources/Images/Fotomatic/images/banner-landingpage.jpg" alt="Project 1">
                 <h3>Fotomatic</h3>
-                <p>Available soon</p>
-                <!--<a href="#">Go to the site</a>-->
-            </div>
-            <div class="project">
-                <img src="./Resources/Images/Tea Cozy/images/img-locations-background.jpg" alt="Project 1">
-                <h3>Tea Cozy</h3>
                 <p>Available soon</p>
                 <!--<a href="#">Go to the site</a>-->
             </div>

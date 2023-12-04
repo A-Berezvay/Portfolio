@@ -61,6 +61,7 @@ header ul li a:hover {
     background-color: black;
     color: seashell;
     width: 100%;
+    padding: 30px 0;
 }
 
 .tea-of-the-month h2,
@@ -89,6 +90,13 @@ header ul li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    padding: 5px;
+}
+
+.teas:hover {
+    scale: 1.1;
 }
 
 .tea-display img {
@@ -122,11 +130,18 @@ header ul li a:hover {
 
 .locations {
     background-color: black;
+    height: 200px;
     width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 10px;
+    transition: all 0.3s ease-in;
+}
+
+.locations:hover {
+    scale: 1.1;
 }
 
 .locations-display {
@@ -147,4 +162,18 @@ header ul li a:hover {
 footer p {
     text-align: left;
     margin: 20px 10px;
+}
+
+i {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #0037CC;
+    padding: 25px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+
+i:hover {
+    scale: 1.1;
 }
