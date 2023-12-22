@@ -64,7 +64,7 @@ header h1 a {
 }
 
 header h1 a:hover {
-    color: darkgray;
+    color: #0077CC;
     transition: all 0.3s ease 0s;
 }
 
