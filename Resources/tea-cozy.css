@@ -9,6 +9,7 @@ body {
     background-color: black;
 }
 
+/* Header */
 header {
     background-color: black;
     display: flex;
@@ -38,6 +39,19 @@ header ul li a:hover {
     color: blue;
 }
 
+@media only screen and (max-width: 480px) {
+
+    header {
+        justify-content: center;
+    }
+
+    header ul li{
+        display: none;
+    }
+}
+
+/* Mission */
+
 .introduction {
     display: flex;
     justify-content: center;
@@ -63,6 +77,8 @@ header ul li a:hover {
     width: 100%;
     padding: 30px 0;
 }
+
+/* Tea of the month*/
 
 .tea-of-the-month h2,
 .tea-of-the-month h4 {
@@ -105,10 +121,24 @@ header ul li a:hover {
     margin: 10px;
 }
 
+
+@media only screen and (max-width: 480px) {
+    .tea-display {
+        flex-direction: column;
+        width: auto;
+    }
+}
+
+/* Locations */
+
 .background1 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.background1 h2 {
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .locations-background {
@@ -151,6 +181,29 @@ header ul li a:hover {
     width: 100%;
 }
 
+@media only screen and (max-width: 480px) {
+
+    .background1{
+        height: 100vh;
+    }
+
+    .locations {
+        height: 100px;
+    }
+
+    .locations-display{
+        height: 700px;
+        flex-direction: column;
+    }
+
+    .locations-background {
+        height: 100vh;
+        justify-content: space-around;
+    }
+}
+
+/* Info */
+
 .info {
     height: 200px;
     display: flex;
@@ -158,6 +211,8 @@ header ul li a:hover {
     align-items: center;
     justify-content: space-around;
 }
+
+/* Footer */
 
 footer p {
     text-align: left;

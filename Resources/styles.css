@@ -149,6 +149,7 @@ header h1 a:hover {
 
     header {
         font-size: 0.60rem;
+        justify-content: center;
     }
 
     header nav {
@@ -199,7 +200,7 @@ header h1 a:hover {
     .overlay {
         padding: 60px;
         width: 100%;
-        height: 700px;
+        height: 800px;
         font-size: 1.5rem;
     }
 }
@@ -347,7 +348,7 @@ header h1 a:hover {
 
     .self-proclamations {
         height: 200px;
-        margin: 0;
+        margin: 0 30px;
     }
 
     .column-container img {
@@ -391,6 +392,13 @@ header h1 a:hover {
 
     .CV h2 {
         font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .CV h2 {
+        font-size: 1.5rem;
     }
 }
 
@@ -521,6 +529,7 @@ header h1 a:hover {
 
     #skills {
         padding: 0;
+
     }
 
     #skills p {
@@ -528,12 +537,20 @@ header h1 a:hover {
     }
 
     .technologies {
-        margin: 30px 0;
+        margin: 10px 0;
+        justify-content: center;
+        height: 150px;
+    }
+
+    .tech-icons {
+        width: 200px;
     }
 
     .skill {
         width: 350px;
         font-size: 1rem;
+        margin: 40px 30px;
+        padding: 0;
     }
 
     #skills img {
@@ -543,7 +560,7 @@ header h1 a:hover {
 
     .skill-display {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 
@@ -647,6 +664,17 @@ header h1 a:hover {
 
     .portfolio {
         padding: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .portfolio {
+        padding: 0;
+    }
+
+    .project {
+        margin: 30px;
     }
 }
 
