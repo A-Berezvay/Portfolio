@@ -164,7 +164,7 @@ header h1 a:hover {
     background-image: url(/Resources/Images/Laptop\ with\ code.jpg);
     background-size: cover;
     width: 100%;
-    height: 800px;
+    height: 100vh;
     background-attachment: fixed; 
     background-color: black;
     padding: 0;
@@ -174,7 +174,7 @@ header h1 a:hover {
 .overlay {
     padding: 60px;
     width: 100%;
-    height: 800px;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: center;
@@ -194,13 +194,13 @@ header h1 a:hover {
 @media only screen and (max-width: 480px){
     .intro {
     width: 100%;
-    height: 50px;
+    height: 100vh;
     }
 
     .overlay {
         padding: 60px;
         width: 100%;
-        height: 800px;
+        height: 100vh;
         font-size: 1.5rem;
     }
 }
@@ -212,7 +212,7 @@ header h1 a:hover {
         background-image: url(/Images/Laptop\ with\ code.jpg);
         background-size: auto;
         width: 100%;
-        height: 200px;
+        height: 100vh;
         background-attachment: fixed; 
         background-color: black;
         padding: 0;
@@ -221,7 +221,7 @@ header h1 a:hover {
         .overlay {
             padding: 60px;
             width: 100%;
-            height: 800px;
+            height: 100vh;
             background-color: rgba(0, 0, 0, 0.75);
             display: flex;
             justify-content: center;
