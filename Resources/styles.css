@@ -138,6 +138,7 @@ header h1 a:hover {
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     header {
         font-size: 0.75rem;
+        justify-content: center;
     }
 
     header nav {
@@ -235,14 +236,13 @@ header h1 a:hover {
 =========================================*/
 
 .self-portrait {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
 }
 
 .about-me {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -253,14 +253,14 @@ header h1 a:hover {
     padding: 50px 30px;
 }
 
+/*
 .self-proclamations {
     text-align: center;
-    border: 2px black solid;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 300px;
-    padding: 10px 0;
-    margin: 0 130px;
+    padding: 0;
 }
 
 .column {
@@ -280,7 +280,7 @@ header h1 a:hover {
 .column-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 50px;
 }
 
@@ -290,11 +290,16 @@ header h1 a:hover {
     display: flex;
     flex-direction: column;
 }
+*/
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+    }
+
     .self-portrait {
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
     }
 
     .about-me p {
@@ -319,7 +324,7 @@ header h1 a:hover {
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1100px) {
+@media only screen and (min-width: 769px) and (max-width: 1100px) {  
     .self-portrait {
         height: 200px;
         width: 200px;
@@ -334,6 +339,7 @@ header h1 a:hover {
     
     .about-me {
         padding: 25px 50px;
+        flex-direction: column;
     }
     
     .self-portrait {
@@ -378,9 +384,10 @@ header h1 a:hover {
 
 }
 
-.CV h2 {
+.CV p {
+    text-align: center;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 1rem;
     background-color: #fff;
     border-radius: 5px;
     padding: 25px;
@@ -389,16 +396,22 @@ header h1 a:hover {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .CV {
+        height: 60vh;
+    }
 
-    .CV h2 {
-        font-size: 2rem;
+    .CV p {
+        font-size: 1rem;
     }
 }
 
 @media only screen and (max-width: 480px) {
+    .CV {
+        height: 60vh;
+    }
 
-    .CV h2 {
-        font-size: 1.5rem;
+    .CV p {
+        font-size: .75rem;
     }
 }
 
@@ -511,7 +524,9 @@ header h1 a:hover {
     }
 
     .technologies {
-        margin: 30px 0;
+        margin: 10px 0;
+        justify-content: center;
+        height: 150px;
     }
 
     #skills img {
@@ -521,7 +536,7 @@ header h1 a:hover {
 
     .skill-display {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 
@@ -563,52 +578,6 @@ header h1 a:hover {
         flex-direction: column-reverse;
     }
 }
-
-/* Designing the 3D cube */  
-
-.cube-design {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    perspective: 1000px; /* Create a 3D perspective effect */
-    perspective-origin: center;
-    margin: 0;
-    background-color: rgb(11, 14, 50);
-    color: white;
-  }
-  
-.cube {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    transform-style: preserve-3d;
-    animation: rotate 6s infinite linear;
-  }
-  
-.face {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background: rgba(0, 123, 255, 0.7);
-    border: 1px solid #007bff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-  }
-  
-.front  { transform: rotateY(0deg) translateZ(100px); }
-.back   { transform: rotateY(180deg) translateZ(100px); }
-.right  { transform: rotateY(90deg) translateZ(100px); }
-.left   { transform: rotateY(-90deg) translateZ(100px); }
-.top    { transform: rotateX(90deg) translateZ(100px); }
-.bottom { transform: rotateX(-90deg) translateZ(100px); }
-  
-@keyframes rotate {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
-  }
   
 /* PORTFOLIO 
 ================================*/
@@ -620,45 +589,60 @@ header h1 a:hover {
 }
 
 .project {
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    overflow: hidden;
     border: 2px black solid;
+    border-radius: 5px;
     width: 300px;
+    height: 300px;
     margin: 50px;
-    transition: 0.3s ease;
+    transition: 5s ease;
     box-shadow: 0 20px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.project h3 {
-    margin-top: 5px;
+.layer {
+    position:absolute;
+    top: 1px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 300px;
+    height: 0;
+    transition: all 5s ease;
 }
 
-.project p {
-    padding: 50px;
-    text-align: left;
-    font-size: 1rem;
+.project-container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.project a {
-    margin-bottom: 5px;
+.layer h3 {
+    color: white;
+    font-size: 2rem;
 }
+
 
 .project img {
-    height: 170px;
-    width: 100%;
     transition: 0.3s ease;
-}
-
-/*.project:hover {
-    border-radius: 20px 20px 0 0;
-    border-radius: 20px;
-    box-shadow: 0 0 0;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 
 .project:hover img {
-    border-radius: 20px 20px 0 0;
-}*/
+    scale: 1.1;
+}
+
+.project:hover .layer {
+    display: block;
+    height: 300px;
+}
 
 
 
@@ -781,12 +765,24 @@ footer {
     border-top: 2px solid black;
 }
 
+footer a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease-in;
+}
+
+footer a:hover {
+    color: #0077CC;
+}
+
 footer p {
     margin: 0;
 }
 
 footer h3 {
     margin: 0 0 10px 0;
+    text-align: center;
 }
 
 .footer-top {
@@ -798,6 +794,8 @@ footer h3 {
 
 .footer-top div {
     text-align: justify;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-top div ul {
@@ -805,13 +803,33 @@ footer h3 {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    footer p {
+    footer a {
         font-size: 1rem;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-top div {
+        margin-top: 60px;
+        align-items: center;
     }
 }
 
 @media only screen and (max-width: 480px) {
     footer p {
         font-size: 0.9rem;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-top div {
+        margin-top: 60px;
+        align-items: center;
     }
 }
