@@ -239,6 +239,7 @@ header h1 a:hover {
     height: 400px;
     width: 400px;
     border-radius: 5px;
+    box-shadow: 0 0 50px rgba(0, 119, 204, 0.5);
 }
 
 .about-me {
@@ -252,45 +253,6 @@ header h1 a:hover {
 .about-me p {
     padding: 50px 30px;
 }
-
-/*
-.self-proclamations {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 300px;
-    padding: 0;
-}
-
-.column {
-    display: flex;
-    flex-direction: row;
-}
-
-.column img {
-    height: 50px;
-    width: auto;
-}
-
-.column p {
-    margin-top: 30px;
-}
-
-.column-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 50px;
-}
-
-#web-dev,
-#chef,
-#ux {
-    display: flex;
-    flex-direction: column;
-}
-*/
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .about-me {
@@ -421,7 +383,13 @@ header h1 a:hover {
 =================================*/
 
 #skills article{
+    margin: 50px 0;
     text-align: center;
+    padding: 10px 30px;
+}
+
+#skills article h4 {
+    text-decoration: underline;
 }
 
 #skills p {
