@@ -1,4 +1,4 @@
-/* styles.css */
+/* GENERAL STYLING */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,43 +15,59 @@ body {
     padding: 0;
 }
 
-p {
-    font-size: large;
-}
-
-h2 {
-    margin-top: 50px;
-    text-align: center;
-}
-
-h3 {
-    margin: 5px;
-}
-
-section {
+section{
     padding: 50px 100px;
 }
 
-button {
-    color: white;
-    background:#0077CC;
+    /* SCROLLING EFFECT */
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100px);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+button{
+    color: black;
+    background: transparent;
     padding: 10px;
-    border-radius: 5px;
-    border: 0;
-    box-shadow: 1px 1px 2px black;
-    transition: all 0.3s ease-in;
+    border-radius: 20px;
+    border: 1px solid black;
+    transition: all 0.1s ease-in;
     font-weight: bold;
     cursor: pointer;
 }
 
 button:hover {
-    background: #0077CC;
-    box-shadow: 2px 2px 3px black;
+    background: black;
+    color: white;
 }
 
-.button:active {
+.button:active{
     transform: translateY(2px);
-  }
+}
+
+/* TYPOGRAPHY */
+
+p{
+    font-size: large;
+}
+
+h2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+h3{
+    margin: 5px;
+}
 
 /* Header Styling 
 ==============================*/
@@ -72,25 +88,6 @@ header {
     font-size: 16px;
     opacity: 0.9;
     transition: all .3s ease-in;
-}
-
-header.scrolled {
-    background-color: transparent;
-    border-bottom: 0px;
-}
-
-header.scrolled h1 a,
-.nav-links li a {
-    color: black;
-}
-
-header.scrolled h1 a,
-header.scrolled .nav-links li a {
-    color: white;
-}
-
-header.scrolled .nav-links li a:hover {
-    color: #0077CC;
 }
 
 
@@ -158,100 +155,80 @@ header h1 a:hover {
     }
 }
 
-/* INTRODUCTION
-================================== */
+/* HERO SECTION 
+=========================================*/
 
-.intro {
-    background-image: url(/Resources/Images/Laptop\ with\ code.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    background-attachment: fixed; 
-    background-color: black;
-    padding: 0;
-
-}
-
-.overlay {
-    padding: 60px;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.75);
+.hero{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    font-size: 3rem;
     text-align: center;
-}
-
-.overlay h2,
-.overlay p {
-    color: whitesmoke;
-}
-
-/* Responsive design for mobiles */
-
-@media only screen and (max-width: 480px){
-    .intro {
-    width: 100%;
     height: 100vh;
-    }
-
-    .overlay {
-        padding: 60px;
-        width: 100%;
-        height: 100vh;
-        font-size: 1.5rem;
-    }
+    line-height: 4rem;
+    font-size: 2rem;
 }
 
-/* Responsive design for tablets */
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .intro {
-        background-image: url(/Images/Laptop\ with\ code.jpg);
-        background-size: auto;
-        width: 100%;
-        height: 100vh;
-        background-attachment: fixed; 
-        background-color: black;
-        padding: 0;
-        }
-    
-        .overlay {
-            padding: 60px;
-            width: 100%;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.75);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            font-size: 1.5rem;
-            text-align: center;
-        }
+.hero-links{
+    display: flex;
+    flex-direction: column;
 }
+
+.hero-social img{
+    height: 30px;
+}
+
 /* ABOUT ME SECTION 
 =========================================*/
 
 .self-portrait {
-    height: 400px;
-    width: 400px;
-    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
     box-shadow: 0 0 50px rgba(0, 119, 204, 0.5);
 }
 
+
+
 .about-me {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     text-align: center;
+    font-size: .75rem;
 }
 
-.about-me p {
-    padding: 50px 30px;
+.about-me p{
+    font-size: .75rem;
+    text-align: center;
+}
+
+.about-me li{
+    list-style-type: none;
+    text-align: left;
+}
+
+.about-me article{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    align-items: center;
+}
+
+.credentials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 700px;
+}
+
+.badges{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5%;
+    width: 250px;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -262,6 +239,10 @@ header h1 a:hover {
     .self-portrait {
         height: 200px;
         width: 200px;
+    }
+
+    .badges{
+        width: 350px;
     }
 
     .about-me p {
@@ -292,8 +273,24 @@ header h1 a:hover {
         width: 200px;
     }
 
+    .about-me{
+        padding: 50px 300px;
+    }
+
     .about-me p {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .badges{
+        width: 450px;
+    }
+
+    .badges p{
+        font-size: 1rem;
+    }
+
+    .badges h3{
+        font-size: 1.25rem;
     }
 }
 
@@ -328,56 +325,6 @@ header h1 a:hover {
         font-size: 0.8rem;
     }
 }
-
-/* CV SECTION 
-================================*/
-
-.CV {
-    background-image: url(/Resources/Images/resume-background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 300px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-.CV p {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1rem;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 25px;
-    margin: 0;
-
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .CV {
-        height: 60vh;
-    }
-
-    .CV p {
-        font-size: 1rem;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .CV {
-        height: 60vh;
-    }
-
-    .CV p {
-        font-size: .75rem;
-    }
-}
-
-
 
 /* SKILLS 
 =================================*/

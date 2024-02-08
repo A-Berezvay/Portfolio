@@ -18,34 +18,46 @@
         <h1><a href="index.html">Albert Berezvay</a></h1>
         <nav>
             <ul class="nav-links">
-                <li><a href="#scroll-1">CV</a></li>
+                <li><a href="#about-me">About me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
     </header>
-    <!-- INTRODUCTION SECTION -->
     <main>
-        <section class="intro">
-            <div class="overlay">
-                <h2>Hi, I'm Albert</h2>
-                <p>An aspiring Web Developer</p>
+    <!-- HERO SECTION -->
+        <section class="hero hidden">
+            <p>Hello, I'm</p>
+            <h1>Albert Berezvay</h1>
+            <p>Web Developer</p>
+            <div class="hero-links">
+                <div>
+                    <a href="/Resources/Images/Albert's Resume (10_2023)_page-0001.jpg" download="Albert's Resume (10_2023)_page-0001.jpg"><button id="cv">Download CV</button></a>
+                    <a href=""><button>Contact Info</button></a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/albert-berezvay/" target="_blank"><img src="/Resources/Images/Icons/linkedin-100.png" alt="LinkedIn logo"></a>
+                    <a href="https://github.com/A-Berezvay" target="_blank"><img src="/Resources/Images/Icons/github-100.png" alt="Github logo"></a>
+                </div>
             </div>
         </section>
     <!-- ABOUT ME SECTION -->
-        <h2>A little bit about me</h2>
-        <section class="about-me">
+        <h2 class="hidden">About me</h2>
+        <section class="about-me hidden" id="about-me">
             <img class="self-portrait" src="/Resources/Images/Portrait.jpeg" alt="A self portrait about me standing in front of a white wall.">
-            <p>My name is Albert and I'm an aspiring Web Developer with inerest in Front-End development. My foundational knowledge in programming was acquired through formal education; however I believe that coding is predominantly a self-taught skill, emphasizing practical results over formal certificates. The content presented on this site is a testament to my skills and achievements. I take great pride in the work I've produced, and I am actively seeking opportunities to contributemy expertise in an entry-level position within the near future.</p>
-        </section>
-        <!-- CV -->
-        <section class="CV" id="scroll-1">
-                <p>If you're interested in learning more about my skills, experience, and qualifications, you can download my resume below.</p>
-                <a href="/Resources/Images/Albert's Resume (10_2023)_page-0001.jpg" download><button>Click here</button></a>
+            <article>
+                <div class="credentials">
+                    <div class="badges">
+                        <h3>Education</h3>
+                        <p>AP Degree, Digital Communication/Multimedia</p>
+                    </div>
+                </div>
+                <p>My name is Albert and I'm an aspiring Web Developer with interest in Front-End development. My foundational knowledge in programming was acquired through formal education; however I believe that coding is predominantly a self-taught skill, emphasizing practical results over formal certificates. The content presented on this site is a testament to my skills and achievements. I take great pride in the work I've produced, and I am actively seeking opportunities to contribute my expertise in an entry-level position within the near future.</p>
+            </article>
         </section>
     <!-- SKILL SECTION -->
-        <h2>My Skills</h2>
-        <section id="skills">
+        <h2 class="hidden">My Skills</h2>
+        <section class="hidden" id="skills">
             <div class="skill-display">
                 <div class="technologies">
                     <div>
@@ -83,6 +95,7 @@
                     </ul>
                 </div>
             </div>
+            <!--
             <article>
                 <h4>Project Management</h4>
                 <p>With a strong foundation in project management, I excel in organizing tasks, setting milestones, and ensuring the timely delivery of projects. I leverage tools like Jira to streamline workflows and maintain clear communication among team members.</p>
@@ -90,20 +103,22 @@
                 <p>My passion for web development drives me to create engaging and responsive websites. Proficient in basic front-end languages such as HTML, CSS, and JavaScript, I bring concepts to life with an eye for design and user experience. I am adept at version control using GitHub, ensuring collaborative and efficient development processes.</p>
                 <h4>Consultation</h4>
                 <p>Providing strategic guidance and consultation is a key aspect of my expertise. I work closely with clients to understand their needs, offering tailored solutions that align with their goals. My ability to bridge technical and non-technical perspectives facilitates effective communication and project success.</p>
-            </article>
+            </article> -->
         </section>
     <!-- A PORTFOLIO THAT SHOWCASES MY PROJECTS -->
-        <h2>Portfolio</h2>
-        <section class="portfolio" id="projects">
-            <div class="project">
-                <a href="colmar-academy.html">
-                    <img src="./Resources/Images/Colmar Academy/thesis-fisma.jpg" alt="An image of a cluttered desk with a phone on it and with a hand writing something on one of the papers">
-                    <div class="layer">
-                        <div class="project-container">
-                            <h3>Colmar Academy</h3>
+        <h2 class="hidden">Portfolio</h2>
+        <section class="portfolio hidden" id="projects">
+            <div>
+                <div class="project">
+                    <a href="colmar-academy.html">
+                        <img src="./Resources/Images/Colmar Academy/thesis-fisma.jpg" alt="An image of a cluttered desk with a phone on it and with a hand writing something on one of the papers">
+                        <div class="layer">
+                            <div class="project-container">
+                                <h3>Colmar Academy</h3>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
             <div class="project">
                 <a href="tea-cozy.html">
@@ -127,8 +142,8 @@
             </div>
         </section>
     <!-- CONTACT FORM -->
-        <h2>Get in touch</h2>
-        <section id="contact">
+        <h2 class="hidden">Get in touch</h2>
+        <section class="hidden" id="contact">
             <p>Interested in working together or have any questions? Feel free to reach out to me! Let's discuss how I can help you with your web development needs and create an impactful online presence for you or your business.</p>
             <form action="submit_form.php" method="post">
                 <label for="name">Full name</label>
