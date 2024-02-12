@@ -19,21 +19,6 @@ section{
     padding: 50px 100px;
 }
 
-    /* SCROLLING EFFECT */
-
-.hidden{
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100px);
-    transition: all 1s;
-}
-
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
 button{
     color: black;
     background: transparent;
@@ -52,6 +37,21 @@ button:hover {
 
 .button:active{
     transform: translateY(2px);
+}
+
+/* SCROLLING EFFECT */
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100px);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 /* TYPOGRAPHY */
@@ -158,6 +158,19 @@ header h1 a:hover {
 /* HERO SECTION 
 =========================================*/
 
+#background-image-mobile{
+ display: none;
+}
+
+#background-image-desktop{
+    position: absolute;
+    top: 100px;
+    z-index: -1;
+    filter: blur(5px);
+    width: 100%;
+    height: auto;
+}
+
 .hero{
     display: flex;
     flex-direction: column;
@@ -167,6 +180,11 @@ header h1 a:hover {
     height: 100vh;
     line-height: 4rem;
     font-size: 2rem;
+    color: white;
+}
+
+.intro-design{
+    color: white;
 }
 
 .hero-links{
@@ -174,16 +192,68 @@ header h1 a:hover {
     flex-direction: column;
 }
 
+.cta{
+    color: white;
+    border: 1px white solid;
+}
+
+#cv{
+    background-color: #0077CC;
+    border: 1px white solid;
+    transition:all .3s ease-in;
+}
+
+#cv:hover{
+    background-color: black;
+}
+
 .hero-social img{
     height: 30px;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    #background-image-desktop{
+        display: none;
+    }
+
+    #background-image-mobile{
+        display: block;
+        position: absolute;
+        top: 100px;
+        filter: blur(5px);
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #background-image-desktop{
+        display: none;
+    }
+
+    #background-image-mobile{
+        display: block;
+        position: absolute;
+        top: 100px;
+        filter: blur(5px);
+        z-index: -1;
+        width: 100%;
+        height: 90vh;
+    }
+}
+
+@media only screen and (min-width: 1800px){
+    .hero{
+        height: 130vh;
+    }
+}
 /* ABOUT ME SECTION 
 =========================================*/
 
 .self-portrait {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     border-radius: 20px;
     box-shadow: 0 0 50px rgba(0, 119, 204, 0.5);
 }
@@ -195,54 +265,26 @@ header h1 a:hover {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    text-align: center;
     font-size: .75rem;
 }
 
 .about-me p{
-    font-size: .75rem;
-    text-align: center;
-}
-
-.about-me li{
-    list-style-type: none;
-    text-align: left;
-}
-
-.about-me article{
-    display: flex;
-    flex-direction: column;
-    padding: 0 10%;
-    align-items: center;
-}
-
-.credentials{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 700px;
-}
-
-.badges{
+    font-size: 1rem;
+    width: 500px;
     border: 1px solid black;
     border-radius: 20px;
-    padding: 5%;
-    width: 250px;
+    padding: 20px;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .about-me {
         flex-direction: column;
+        height: 100vh;
     }
 
     .self-portrait {
         height: 200px;
         width: 200px;
-    }
-
-    .badges{
-        width: 350px;
     }
 
     .about-me p {
@@ -269,12 +311,14 @@ header h1 a:hover {
 
 @media only screen and (min-width: 769px) and (max-width: 1100px) {  
     .self-portrait {
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
     }
 
     .about-me{
         padding: 50px 300px;
+        flex-direction: column;
+        height: 100vh;
     }
 
     .about-me p {
@@ -299,21 +343,17 @@ header h1 a:hover {
     .about-me {
         padding: 25px 50px;
         flex-direction: column;
+        height: 110vh;
     }
     
     .self-portrait {
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
     }
 
     .about-me p {
         font-size: 0.90rem;
-        padding: 30px 10px;
-    }
-
-    .self-proclamations {
-        height: 200px;
-        margin: 0 30px;
+        width: 90%;
     }
 
     .column-container img {
